@@ -28,6 +28,7 @@ public class Consumer {
 		final ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext(CONFIG, Consumer.class);
 		ctx.start();
 
+
 		final QueueChannel channel = ctx.getBean("inputFromKafka", QueueChannel.class);
 		Message msg;		
 		while((msg = channel.receive()) != null) {

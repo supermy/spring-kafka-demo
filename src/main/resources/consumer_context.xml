@@ -45,6 +45,6 @@
 	</int-kafka:consumer-context>
 
 	<int-kafka:zookeeper-connect id="zookeeperConnect"
-		zk-connect="localhost:2181" zk-connection-timeout="6000"
+		zk-connect="192.168.59.103:2181" zk-connection-timeout="6000"
 		zk-session-timeout="400" zk-sync-time="200" />
 </beans>
