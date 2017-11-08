@@ -15,7 +15,7 @@ public class NativeProducer {
         Random rand = new Random();
  
         Properties props = new Properties();
-        props.put("metadata.broker.list", "localhost:9092");
+        props.put("metadata.broker.list", "172.16.16.80:9092");
         props.put("serializer.class", "kafka.serializer.StringEncoder");
         props.put("request.required.acks", "1");
  
